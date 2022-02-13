@@ -37,7 +37,7 @@ define("ADMIN_PASS", "123456789");
 define("WORKERNUM", 32);
 
 // 是否启用调试模式，可以输出详细信息
-define("DEBUG", false);
+define("DEBUG", true);
 
 // 是否使用 X-Real-IP 来获取客户端 IP，适用于 Nginx 反代后的 WebSocket
 define("USE_X_REAL_IP", true);
@@ -52,11 +52,11 @@ define("REDIS_HOST", "127.0.0.1");
 define("REDIS_PORT", "6379");
 
 // Redis 密码（留空禁用）
-define("REDIS_PASS", "");
+define("REDIS_PASS", "123456");
 
 // 音乐信息获取 API，默认是 ZeroDream 的 API
 // 可自行搭建，参考：https://github.com/mengkunsoft/MKOnlineMusicPlayer
-define("MUSIC_API", "https://cdn.zerodream.net/netease");
+define("MUSIC_API", "https://cdn.zerodream.net:4443/netease");
 
 // Python3 可执行文件位置
 define("PYTHON_EXEC", "/usr/bin/python3");
